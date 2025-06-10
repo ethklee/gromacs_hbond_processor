@@ -1,2 +1,35 @@
 # gromacs_hbond_processor
-A set of python functions for processing the confusing output files of gmx_hbond
+
+The analysis of hydrogen bonds from molecular dynamics (MD) simulations is surprisingly difficult, even using the extremely useful python packages out there specifically for analyzing MD simulations. For example, the hbond_analysis modules in MDAnalysis is slow and doesn't seem to work half the time.
+
+I find that the quickest and best way to analyze hydrogen bonds is by using GROMACS. Unfortunately, the output of gmx_hbond is pretty confusing and the documentation is lacking. Here, I provide some python functions I have written to parse through the confusing gmx_bond output files and extract key information.
+
+Admittedly, the code could use some cleaning up - one day I will have to go back and tighten it up and give some variables some clearer names. But hey, at least you know for sure that I didn't use ChatGPT.
+
+Check out the examples folder for a quick demo.
+
+# Features
+
+- Compute hydrogen bond occupancy statistics from MD simulations
+- Parse '.ndx' and '.xpm' output files from gmx_hbond
+- Identify hydrogen bond donor and acceptor atoms
+- Generate residue-level hydrogen bond maps
+- Compare hydrogen bonding statistics across multiple systems (even if they have different structures, ex. mutants)
+
+# Requirements
+
+- Python 3.7+
+- numpy
+- pandas
+
+# Project Structure
+
+hbond/
+├── parser.py      # file import functions (.ndx, .gro, .xpm)
+├── utils.py       # helper functions (e.g., cutoff filters, label formatting)
+├── analysis.py    # functions for core analysis
+├── compare.py     # functions for comparison of hydrogen bonds across systems
+examples/
+├── demo_analysis.ipynb  # tutorial
+├── example_data/		 # example data used in the tutorial
+├── README.md
