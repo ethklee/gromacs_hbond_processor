@@ -1,8 +1,8 @@
 # gromacs_hbond_processor
 
-The analysis of hydrogen bonds from molecular dynamics (MD) simulations is surprisingly difficult, even using the extremely useful python packages out there specifically for analyzing MD simulations. For example, the hbond_analysis modules in MDAnalysis is slow and doesn't seem to work half the time.
+The analysis of hydrogen bonds from molecular dynamics (MD) simulations is surprisingly difficult, even when using the extremely useful python packages out there specifically for analyzing MD simulations. For example, the hbond_analysis modules in MDAnalysis are slow and complicated to set up.
 
-I find that the quickest and best way to analyze hydrogen bonds is by using GROMACS. Unfortunately, the output of gmx_hbond is pretty confusing and the documentation is lacking. Here, I provide some python functions I have written to parse through the confusing gmx_bond output files and extract key information.
+I find that the quickest and best way to analyze hydrogen bonds is by using GROMACS. Unfortunately, the output of gmx_hbond is pretty confusing and the documentation is lacking. Here, I provide some python functions to parse through the confusing gmx_hbond output files and extract key information.
 
 Check out the examples folder for a quick demo.
 

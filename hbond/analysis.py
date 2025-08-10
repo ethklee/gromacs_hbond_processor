@@ -6,6 +6,10 @@ Core analysis functions for computing hydrogen bond statistics from gmx_hbond.
 Includes functions to generate summary dataframes and hydrogen bond interaction maps
 using '.ndx', '.gro', and '.xpm' files.
 
+The creation of summary dataframes for an MD system is the backbone of this set of
+analysis scripts. A dataframe made using hbond_df() will list all donor and acceptor
+residues and atoms involved in hydrogen bonds, sorted by frequency.
+
 Author: Ethan Lee
 Created: 2021-06-19
 """

@@ -4,7 +4,7 @@ utils.py
 Functions for processing hydrogen bond data from GROMACS files.
 
 These functions support common operations like occupancy filtering and atom
-property extraction from '.gro'' files.
+property extraction from '.gro' files.
 
 Author: Ethan Lee
 Created: 2021-06-19
