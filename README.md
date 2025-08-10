@@ -4,8 +4,6 @@ The analysis of hydrogen bonds from molecular dynamics (MD) simulations is surpr
 
 I find that the quickest and best way to analyze hydrogen bonds is by using GROMACS. Unfortunately, the output of gmx_hbond is pretty confusing and the documentation is lacking. Here, I provide some python functions I have written to parse through the confusing gmx_bond output files and extract key information.
 
-Admittedly, the code could use some cleaning up - one day I will have to go back and tighten it up and give some variables some clearer names. But hey, at least you know for sure that I didn't use ChatGPT.
-
 Check out the examples folder for a quick demo.
 
 # Features
